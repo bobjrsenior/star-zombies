@@ -124,9 +124,6 @@ else if(d){
 else{
     hsp = 0;
 }
-
-x += hsp;
-y += vsp;
 </string>
           </argument>
         </arguments>
@@ -148,9 +145,43 @@ y += vsp;
           <argument>
             <kind>1</kind>
             <string>///collision~
+if(place_meeting(x,y,obj_Wall)){
+    if(!place_meeting(x+16,y,obj_Wall)){
+        while(place_meeting(x,y,obj_Wall)){
+            x += 1;
+        }
+    }
+    else if(!place_meeting(x-16,y,obj_Wall)){
+        while(place_meeting(x,y,obj_Wall)){
+            x -= 1;
+        }
+    }
+    else if(!place_meeting(x,y+11,obj_Wall)){
+        while(place_meeting(x,y,obj_Wall)){
+            y += 1;
+        }
+    }
+    else if(!place_meeting(x,y-11,obj_Wall)){
+        while(place_meeting(x,y,obj_Wall)){
+            y -= 1;
+        }
+    }
+    else if(!place_meeting(x+16,y+11,obj_Wall)){
+        while(place_meeting(x,y,obj_Wall)){
+            y += 1;
+            x += 1;
+        }
+    }
+    else{
+        while(place_meeting(x,y,obj_Wall)){
+            y -= 1;
+            x -= 1;
+        } 
+    }
+}
 if (place_meeting(x+hsp,y,obj_Wall))
 {
-while(!place_meeting(x+sign(hsp),y,obj_Wall)){
+    while(!place_meeting(x+sign(hsp),y,obj_Wall)){
         x += sign(hsp);
     }
     hsp=0;
@@ -162,6 +193,10 @@ if (place_meeting(x,y+vsp,obj_Wall))
     }
     vsp=0;
 }
+
+
+x += hsp;
+y += vsp;
 </string>
           </argument>
         </arguments>
