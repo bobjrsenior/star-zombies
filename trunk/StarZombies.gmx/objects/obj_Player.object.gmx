@@ -34,6 +34,7 @@ image_speed = 0;
 image_index = 11;
 frame_count = 0;
 frame_dir = 1;
+frame_index = 0;
 move_dir = 0;
 
 </string>
@@ -62,6 +63,7 @@ move_dir = 0;
 a = keyboard_check_direct(ord('A'));
 s = keyboard_check_direct(ord('S'));
 d = keyboard_check_direct(ord('D'));
+key_check = (w || a || s || d);
 
 x_change = obj_Cursor.x - x;
 y_change = obj_Cursor.y - y;
@@ -83,53 +85,62 @@ image_angle += sign(diff) * 1000;
 }
 
 //image_angle = -angle;
-frame_count += frame_dir;
-if(frame_count &gt;= 80){
-    frame_dir *= -1;
-    frame_count = 59;
+frame_count += 1;
+if(frame_count &gt;= 15){
+    frame_index += frame_dir;
+    if(frame_index &gt;= 2){
+        frame_dir *= -1;
+        frame_index += frame_dir;
+    }
+    else if(frame_index &lt;= -1){
+        frame_dir *= -1;
+        frame_index += frame_dir;
+    }
+    frame_count = 0;
 }
-else if(frame_count &lt;= 0){
-    frame_dir *= -1;
-    frame_count = 21;
-}
+
 if(w){
     vsp = -4;
-    image_index = 1 + (frame_count / 20);
+    if(!a || !d){
+        image_index = 1 + (frame_index);
+    }
     move_dir = 0;
 }
 else if(s){
     vsp = 4;
-    image_index = 12 + (frame_count / 20);
-        move_dir = 1;
+    if(!a || !d){
+        image_index = 13 + (frame_index);
+    }
+    move_dir = 1;
 }
 else{
     vsp = 0;
 }
 if(a){
     hsp = -4;
-    image_index = 4 + (frame_count / 20);
-        move_dir = 2;
+    image_index = 5 + (frame_index);
+    move_dir = 2;
 }
 else if(d){
     hsp = 4;
-    image_index = 8 + (frame_count / 20);
-        move_dir = 3;
+    image_index = 9 + (frame_index);
+    move_dir = 3;
 }
 else{
     hsp = 0;
 }
 
-if(move_dir == 0){
+if(move_dir == 0 &amp;&amp; !key_check){
     image_index = 0;
 }
-else if(move_dir == 1){
-    image_index = 11;
+else if(move_dir == 1 &amp;&amp; !key_check){
+    image_index = 12;
 }
-else if(move_dir == 2){
-    image_index = 3;
+else if(move_dir == 2 &amp;&amp; !key_check){
+    image_index = 4;
 }
-else if(move_dir == 3){
-    image_index = 7;
+else if(move_dir == 3 &amp;&amp; !key_check){
+    image_index = 8;
 }
 </string>
           </argument>
