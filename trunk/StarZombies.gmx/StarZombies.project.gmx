@@ -8,7 +8,6 @@
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\sprite1</sprite>
-    <sprite>sprites\spr_Bullet</sprite>
     <sprite>sprites\spr_Cursor</sprite>
     <sprite>sprites\spr_Player</sprite>
     <sprites name="menu sprites">
@@ -21,24 +20,29 @@
       <sprite>sprites\spr_title</sprite>
       <sprite>sprites\spr_gameStartbutton</sprite>
     </sprites>
-    <sprite>sprites\spr_Gun</sprite>
     <sprite>sprites\spr_Floor</sprite>
     <sprite>sprites\spr_Enemy1</sprite>
     <sprite>sprites\spr_enemy2</sprite>
     <sprite>sprites\spr_Enemy3</sprite>
     <sprite>sprites\spr_UnbreakableWall</sprite>
     <sprite>sprites\spr_Wall</sprite>
-    <sprite>sprites\spr_Shotgun</sprite>
+    <sprites name="Weapons">
+      <sprite>sprites\spr_Shotgun</sprite>
+      <sprite>sprites\spr_Gun</sprite>
+      <sprite>sprites\spr_Laser</sprite>
+      <sprites name="Bullets">
+        <sprite>sprites\spr_Bullet</sprite>
+        <sprite>sprites\spr_Laser_Bullet</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_startScreen</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_Bullet</object>
     <object>objects\obj_Cursor</object>
     <object>objects\obj_Player</object>
-    <object>objects\obj_Gun</object>
     <object>objects\obj_Floor</object>
     <objects name="menu objs">
       <object>objects\obj_menuFullscreenButton</object>
@@ -56,9 +60,17 @@
     <object>objects\obj_enemy2</object>
     <object>objects\obj_Wall</object>
     <object>objects\obj_UnbreakableWall</object>
-    <object>objects\obj_Shotgun</object>
     <object>objects\obj_Weapon_Parent</object>
     <object>objects\obj_PlayerCollidable</object>
+    <objects name="Weapons">
+      <object>objects\obj_Gun</object>
+      <object>objects\obj_Shotgun</object>
+      <object>objects\obj_Laser</object>
+      <objects name="Bullets">
+        <object>objects\obj_Bullet</object>
+        <object>objects\obj_Laser_Bullet</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_levelTest</room>
