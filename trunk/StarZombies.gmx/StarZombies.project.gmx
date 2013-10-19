@@ -23,6 +23,7 @@
     </sprites>
     <sprite>sprites\spr_Gun</sprite>
     <sprite>sprites\spr_Floor</sprite>
+    <sprite>sprites\spr_gameStartbutton</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_startScreen</background>
@@ -35,9 +36,16 @@
     <object>objects\obj_Gun</object>
     <object>objects\obj_Wall</object>
     <object>objects\obj_Floor</object>
+    <object>objects\obj_menuFullscreenButton</object>
+    <object>objects\obj_menuOptionsButton</object>
+    <object>objects\obj_menuResumeButton</object>
+    <object>objects\obj_title</object>
+    <object>objects\obj_gameStartButton</object>
+    <object>objects\obj_menuBackground</object>
+    <object>objects\obj_menuController</object>
+    <object>objects\obj_menuExitButton</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_rfs</room>
     <room>rooms\rm_gameStartScreen</room>
     <room>rooms\rm_main</room>
     <rooms name="menus">
@@ -47,6 +55,7 @@
     <room>rooms\room10</room>
     <room>rooms\michaels_room</room>
     <room>rooms\room7</room>
+    <room>rooms\rm_rfs</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
