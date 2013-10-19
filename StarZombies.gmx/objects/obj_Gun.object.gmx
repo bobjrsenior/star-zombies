@@ -53,12 +53,13 @@ angle = 0;
             <kind>1</kind>
             <string>angle = obj_Player.image_angle;
 
-x_change = dist*cos(obj_Player.image_angle);
-y_change = dist*sin(obj_Player.image_angle);
+x_change = dist*cos(-2 * pi * (obj_Player.image_angle / 360));
+y_change = dist*sin(-2 * pi * (obj_Player.image_angle / 360));
 
 
 x = obj_Player.x + x_change;
 y = obj_Player.y + y_change;
+image_angle = angle;
 </string>
           </argument>
         </arguments>
