@@ -22,12 +22,12 @@
     <object>objects\obj_Gun</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room0</room>
     <rooms name="menu items">
       <room>rooms\rm_startMenu</room>
       <room>rooms\rm_optionsMenu</room>
     </rooms>
     <room>rooms\rm_room1</room>
-    <room>rooms\room0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
