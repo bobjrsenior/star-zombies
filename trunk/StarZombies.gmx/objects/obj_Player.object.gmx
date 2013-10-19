@@ -60,6 +60,7 @@ d = keyboard_check_direct(ord('D'));
 x_change = obj_Cursor.x - x;
 y_change = obj_Cursor.y - y;
 
+/*
 if(x_change == 0){
     if(y_change &gt; 0){
         angle = 90;
@@ -85,8 +86,25 @@ else{
         angle -= 360;
     }
 }
+*/
 
-image_angle = -angle;
+target_dir = point_direction(x, y, mouse_x, mouse_y);
+
+// Calculate the difference to the target direction...
+diff = target_dir - image_angle;
+// and warp it around -180 and 180...
+while (diff &gt; 180) diff -= 360;
+while (diff &lt; -180) diff += 360;
+// then turn the object in the shorter way.
+if (abs(diff) &lt; 1000) {
+// In this case, make the object precisely fact to the target to avoid shaking.
+image_angle = target_dir;
+}
+else {
+image_angle += sign(diff) * 1000;
+}
+
+//image_angle = -angle;
 
 if(w){
     vsp = -4;
