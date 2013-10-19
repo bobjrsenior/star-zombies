@@ -25,48 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health1 = 1000;
+            <string>health1 = 100;
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>723</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_health</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -227,7 +187,7 @@ if (health1 == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(x,y,"Graaaa")
+            <string>draw_healthbar(x-15,y-15,x+15,y-20,obj_enemy2.health1,c_black,c_red,c_green,0,true,true);
 </string>
           </argument>
         </arguments>

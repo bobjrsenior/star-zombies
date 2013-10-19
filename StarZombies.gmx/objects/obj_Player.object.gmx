@@ -284,7 +284,7 @@ draw_set_color(c_black);
 draw_set_font(fnt_main);
 
 //Draws Health in the topleft corner of screen
-draw_text(10,10,"Health: " + string(obj_Player.hitpoints));  
+//draw_text(10,10,"Health: " + string(obj_Player.hitpoints));  
 
 draw_healthbar(x-15,y-15,x+15,y-20,obj_Player.hitpoints,c_black,c_red,c_green,0,true,true);
 </string>
