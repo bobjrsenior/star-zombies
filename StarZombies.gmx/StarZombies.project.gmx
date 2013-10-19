@@ -11,6 +11,7 @@
     <sprite>sprites\spr_Bullet</sprite>
     <sprite>sprites\spr_Cursor</sprite>
     <sprite>sprites\spr_Player</sprite>
+    <sprite>sprites\spr_Gun</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -18,6 +19,7 @@
     <object>objects\obj_Bullet</object>
     <object>objects\obj_Cursor</object>
     <object>objects\obj_Player</object>
+    <object>objects\obj_Gun</object>
   </objects>
   <help>
     <rtf>help.rtf</rtf>
