@@ -3,7 +3,7 @@
   <spriteName>spr_Gun</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10000000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -53,13 +53,19 @@ angle = 0;
             <kind>1</kind>
             <string>angle = obj_Player.image_angle;
 
-x_change = dist*cos(-2 * pi * (obj_Player.image_angle / 360));
-y_change = dist*sin(-2 * pi * (obj_Player.image_angle / 360));
-
+x_change = dist*cos(-2 * pi * (angle / 360));
+y_change = dist*sin(-2 * pi * (angle / 360));
+x_gun_change = (dist + 16)*cos(-2 * pi * (angle / 360));
+y_gun_change = (dist + 8)*sin(-2 * pi * (angle / 360));
 
 x = obj_Player.x + x_change;
 y = obj_Player.y + y_change;
 image_angle = angle;
+
+
+if(mouse_check_button(mb_left)){
+    instance_create(x + x_gun_change, y + y_gun_change, obj_Bullet);
+}
 </string>
           </argument>
         </arguments>
