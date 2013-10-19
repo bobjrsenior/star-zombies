@@ -20,10 +20,10 @@
       <sprite>sprites\spr_menuOverlay</sprite>
       <sprite>sprites\spr_menuResumeButton</sprite>
       <sprite>sprites\spr_title</sprite>
+      <sprite>sprites\spr_gameStartbutton</sprite>
     </sprites>
     <sprite>sprites\spr_Gun</sprite>
     <sprite>sprites\spr_Floor</sprite>
-    <sprite>sprites\spr_gameStartbutton</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_startScreen</background>
