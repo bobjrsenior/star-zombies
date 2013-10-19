@@ -33,6 +33,9 @@ angle = 0;
 
 fire_delay = 0;
 delay_counter = 0;
+
+fire = false;
+firing_count = 0;
 </string>
           </argument>
         </arguments>
@@ -69,7 +72,8 @@ delay_counter = 0;
     image_angle = angle;
     
     
-    if(delay_counter &gt;= fire_delay &amp;&amp; mouse_check_button(mb_left)){
+    if(delay_counter &gt;= fire_delay &amp;&amp; mouse_check_button_pressed(mb_left)){
+        fire = true;
         counter = 0;
         max_angle = angle + 15;
         min_angle = angle - 15;
@@ -83,8 +87,29 @@ delay_counter = 0;
         }
         delay_counter = 0;
     }
-    else if(delay_counter &lt; fire_delay){
+    else if(delay_counter &lt; fire_delay &amp;&amp; !fire){
         delay_counter ++;
+    }
+    if(fire){
+        counter = 0;
+        firing_count ++;
+        if(firing_count == 5){
+            fire = false;
+        }
+        max_angle = angle + 15;
+        min_angle = angle - 15;
+        var bullet;
+        while(counter &lt; 10){
+            bullet = instance_create(x + x_gun_change, y + y_gun_change, obj_Bullet);
+            angle_bullet = random_range(min_angle,max_angle);
+            bullet.hsp = obj_Bullet.velocity * cos(-2 * pi * (angle_bullet / 360));
+            bullet.vsp = obj_Bullet.velocity * sin(-2 * pi * (angle_bullet / 360));
+            counter ++;
+        }
+        delay_counter = 0;
+    }
+    else{
+        firing_count = 0;
     }
 }
 else{
