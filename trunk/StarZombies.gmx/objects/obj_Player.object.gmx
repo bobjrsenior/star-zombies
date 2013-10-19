@@ -163,50 +163,50 @@ else if(move_dir == 3 &amp;&amp; !key_check){
           <argument>
             <kind>1</kind>
             <string>///collision~
-if(place_meeting(x,y,obj_Wall)){
-    if(!place_meeting(x+16,y,obj_Wall)){
-        while(place_meeting(x,y,obj_Wall)){
+if(place_meeting(x,y,obj_PlayerCollidable)){
+    if(!place_meeting(x+16,y,obj_PlayerCollidable)){
+        while(place_meeting(x,y,obj_PlayerCollidable)){
             x += 1;
         }
     }
-    else if(!place_meeting(x-16,y,obj_Wall)){
-        while(place_meeting(x,y,obj_Wall)){
+    else if(!place_meeting(x-16,y,obj_PlayerCollidable)){
+        while(place_meeting(x,y,obj_PlayerCollidable)){
             x -= 1;
         }
     }
-    else if(!place_meeting(x,y+11,obj_Wall)){
-        while(place_meeting(x,y,obj_Wall)){
+    else if(!place_meeting(x,y+11,obj_PlayerCollidable)){
+        while(place_meeting(x,y,obj_PlayerCollidable)){
             y += 1;
         }
     }
-    else if(!place_meeting(x,y-11,obj_Wall)){
-        while(place_meeting(x,y,obj_Wall)){
+    else if(!place_meeting(x,y-11,obj_PlayerCollidable)){
+        while(place_meeting(x,y,obj_PlayerCollidable)){
             y -= 1;
         }
     }
-    else if(!place_meeting(x+16,y+11,obj_Wall)){
-        while(place_meeting(x,y,obj_Wall)){
+    else if(!place_meeting(x+16,y+11,obj_PlayerCollidable)){
+        while(place_meeting(x,y,obj_PlayerCollidable)){
             y += 1;
             x += 1;
         }
     }
     else{
-        while(place_meeting(x,y,obj_Wall)){
+        while(place_meeting(x,y,obj_PlayerCollidable)){
             y -= 1;
             x -= 1;
         } 
     }
 }
-if (place_meeting(x+hsp,y,obj_Wall))
+if (place_meeting(x+hsp,y,obj_PlayerCollidable))
 {
-    while(!place_meeting(x+sign(hsp),y,obj_Wall)){
+    while(!place_meeting(x+sign(hsp),y,obj_PlayerCollidable)){
         x += sign(hsp);
     }
     hsp=0;
 }
-if (place_meeting(x,y+vsp,obj_Wall))
+if (place_meeting(x,y+vsp,obj_PlayerCollidable))
 {
-    while(!place_meeting(x,y+sign(vsp),obj_Wall)){
+    while(!place_meeting(x,y+sign(vsp),obj_PlayerCollidable)){
         y += sign(vsp);
     }
     vsp=0;
