@@ -39,9 +39,10 @@
   <backgrounds name="background">
     <background>background\bk_startScreen</background>
   </backgrounds>
-  <paths name="paths">
-    <path>paths\path0</path>
-  </paths>
+  <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fnt_main</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_Cursor</object>
     <object>objects\obj_Player</object>
@@ -75,11 +76,12 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_gameStartScreen</room>
     <room>rooms\rm_levelTest</room>
+    <room>rooms\rm2_pauseMenu</room>
     <room>rooms\room10</room>
     <room>rooms\rm_rfs</room>
     <room>rooms\room7</room>
-    <room>rooms\rm_gameStartScreen</room>
     <room>rooms\rm_main</room>
     <rooms name="menus">
       <room>rooms\rm_pauseMenu</room>
