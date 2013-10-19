@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health = 10000;
+            <string>health1 = 100;
 </string>
           </argument>
         </arguments>
@@ -90,15 +90,15 @@
     <event eventtype="4" ename="obj_Player">
       <action>
         <libid>1</libid>
-        <id>203</id>
+        <id>332</id>
         <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
+        <useapplyto>0</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
+        <functionname>action_end_game</functionname>
         <codestring></codestring>
-        <whoName>other</whoName>
+        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
@@ -120,27 +120,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health -= 1;
+            <string>health1 -= 1;
 
-if (health == 0)
+if (health1 == 0)
     instance_destroy();
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>other</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>
