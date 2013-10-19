@@ -51,13 +51,16 @@
             <string>//If 1 or 2 is pressed
 pistol = keyboard_check_direct(ord('1'));
 shotgun = keyboard_check_direct(ord('2'));
-//If 1 is pressed, take out the sword
+laser = keyboard_check_direct(ord('3'));
+
 if(pistol){
     weapon = 1;
 }
-//If 2 is pressed, take out the bow
 else if (shotgun){
     weapon = 2;
+}
+else if(laser){
+    weapon = 3;
 }
 </string>
           </argument>
