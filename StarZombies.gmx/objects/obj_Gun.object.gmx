@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>dist = 16;
+x_change = 0;
+y_change = 0;
+angle = 0;
 </string>
           </argument>
         </arguments>
@@ -48,8 +51,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = obj_Player.x + dist*cos(obj_Player.image_angle);
-y = obj_Player.y + dist*sin(obj_Player.image_angle);
+            <string>angle = obj_Player.image_angle;
+
+x_change = dist*cos(obj_Player.image_angle);
+y_change = dist*sin(obj_Player.image_angle);
+
+
+x = obj_Player.x + x_change;
+y = obj_Player.y + y_change;
 </string>
           </argument>
         </arguments>
