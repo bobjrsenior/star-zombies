@@ -3,7 +3,7 @@
   <spriteName>spr_Player</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-100000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -77,7 +77,7 @@ else if(y_change == 0){
     }
 }
 else{
-    angle = 180 * (pi / ((1/(tan((y_change) / (x_change))))));
+    angle = 180 * (pi / ((1/tan((y_change) / (x_change)))));
     while(angle &lt; 0){
         angle += 360; 
     }
@@ -132,12 +132,16 @@ y += vsp;
             <string>///collision~
 if (place_meeting(x+hsp,y,obj_Wall))
 {
-    x = x-hsp;
+while(!place_meeting(x+sign(hsp),y,obj_Wall)){
+        x += sign(hsp);
+    }
     hsp=0;
 }
 if (place_meeting(x,y+vsp,obj_Wall))
 {
-    y = y-vsp;
+    while(!place_meeting(x,y+sign(vsp),obj_Wall)){
+        y += sign(vsp);
+    }
     vsp=0;
 }
 </string>
@@ -146,7 +150,7 @@ if (place_meeting(x,y+vsp,obj_Wall))
       </action>
     </event>
   </events>
-  <PhysicsObject>-1</PhysicsObject>
+  <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
