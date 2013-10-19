@@ -67,7 +67,7 @@ y = obj_Player.y + y_change;
 image_angle = angle;
 
 
-if(delay_counter == fire_delay &amp;&amp; mouse_check_button(mb_left)){
+if(delay_counter &gt;= fire_delay &amp;&amp; mouse_check_button(mb_left)){
     instance_create(x + x_gun_change, y + y_gun_change, obj_Bullet);
     delay_counter = 0;
 }
