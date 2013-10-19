@@ -77,7 +77,7 @@ else if(y_change == 0){
     }
 }
 else{
-    angle = 180 * (pi / ((1/(tan((obj_Cursor.y - y) / (obj_Cursor.x - x))))));
+    angle = 90 * (pi / ((1/(tan((y_change) / (x_change))))));
     while(angle &lt; 0){
         angle += 360; 
     }
