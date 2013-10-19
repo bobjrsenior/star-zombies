@@ -7,17 +7,17 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>21</bbox_right>
+  <bbox_right>20</bbox_right>
   <bbox_top>1</bbox_top>
-  <bbox_bottom>14</bbox_bottom>
+  <bbox_bottom>13</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>24</width>
-  <height>16</height>
+  <width>22</width>
+  <height>14</height>
   <frames>
     <frame index="0">images\spr_Shotgun_0.png</frame>
   </frames>
