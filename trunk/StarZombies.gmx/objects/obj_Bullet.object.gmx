@@ -26,10 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>velocity = 15;
-hsp = 0;
-vsp = 0;
 
-angle = 0;
+angle = obj_Player.image_angle;
+
+hsp = velocity*cos(-2 * pi * (angle / 360));
+vsp = velocity*sin(-2 * pi * (angle / 360));
+
+count = 0;
 </string>
           </argument>
         </arguments>
@@ -52,9 +55,30 @@ angle = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>angle = obj_Player.image_angle;
+            <string>count ++;
 
-//hsp = velo
+x += hsp;
+y += vsp;
+
+///collision~
+if (place_meeting(x+hsp,y,obj_Wall))
+{
+    while(!place_meeting(x+sign(hsp),y,obj_Wall)){
+        x += sign(hsp);
+    }
+    hsp=0;
+}
+if (place_meeting(x,y+vsp,obj_Wall))
+{
+    while(!place_meeting(x,y+sign(vsp),obj_Wall)){
+        y += sign(vsp);
+    }
+    vsp=0;
+}
+
+if(count == 60){
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
