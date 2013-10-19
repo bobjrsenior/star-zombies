@@ -42,15 +42,14 @@
     <object>objects\obj_title</object>
     <object>objects\obj_gameStartButton</object>
     <object>objects\obj_menuBackground</object>
-    <object>objects\obj_menuController</object>
     <object>objects\obj_menuExitButton</object>
+    <object>objects\obj_menuController</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_gameStartScreen</room>
     <room>rooms\rm_main</room>
     <rooms name="menus">
       <room>rooms\rm_pauseMenu</room>
-      <room>rooms\rm_optionsMenu</room>
     </rooms>
     <room>rooms\room10</room>
     <room>rooms\michaels_room</room>
