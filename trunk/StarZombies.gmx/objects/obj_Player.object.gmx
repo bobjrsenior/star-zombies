@@ -55,6 +55,8 @@ a = keyboard_check_direct(ord('A'));
 s = keyboard_check_direct(ord('S'));
 d = keyboard_check_direct(ord('D'));
 
+image_angle = 1/(tan((obj_cursor.x - x) / (obj_cursor.y - y)));
+
 if(w){
     vsp = -4;
 }

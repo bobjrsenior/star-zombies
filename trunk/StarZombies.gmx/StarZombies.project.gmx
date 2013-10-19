@@ -21,6 +21,9 @@
     <object>objects\obj_Player</object>
     <object>objects\obj_Gun</object>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
