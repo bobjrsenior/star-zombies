@@ -10,17 +10,18 @@
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\spr_Bullet</sprite>
     <sprite>sprites\spr_Cursor</sprite>
-    <sprite>sprites\spr_Player</sprite>
     <sprites name="menu sprites">
       <sprite>sprites\spr_menuBackground</sprite>
       <sprite>sprites\spr_menuExitButton</sprite>
       <sprite>sprites\spr_menuFullscreenButton</sprite>
       <sprite>sprites\spr_menuOptionsButton</sprite>
       <sprite>sprites\spr_menuOverlay</sprite>
+      <sprite>sprites\spr_gameStartbutton</sprite>
       <sprite>sprites\spr_menuResumeButton</sprite>
       <sprite>sprites\spr_title</sprite>
     </sprites>
     <sprite>sprites\spr_Gun</sprite>
+    <sprite>sprites\spr_Player</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_startScreen</background>
@@ -31,6 +32,16 @@
     <object>objects\obj_Cursor</object>
     <object>objects\obj_Player</object>
     <object>objects\obj_Gun</object>
+    <objects name="menu objects">
+      <object>objects\obj_menuController</object>
+      <object>objects\obj_menuBackground</object>
+      <object>objects\obj_menuExitButton</object>
+      <object>objects\obj_menuOptionsButton</object>
+      <object>objects\obj_menuFullscreenButton</object>
+      <object>objects\obj_title</object>
+      <object>objects\obj_menuResumeButton</object>
+      <object>objects\obj_gameStartButton</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_gameStartScreen</room>
@@ -39,9 +50,9 @@
       <room>rooms\rm_pauseMenu</room>
       <room>rooms\rm_optionsMenu</room>
     </rooms>
-    <room>rooms\room10</room>
+    <room>rooms\michael_2_room</room>
     <room>rooms\room9</room>
-    <room>rooms\room8</room>
+    <room>rooms\michaels_room</room>
     <room>rooms\room7</room>
   </rooms>
   <help>
