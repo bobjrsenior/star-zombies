@@ -3,7 +3,7 @@
   <spriteName>spr_Gun</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dist = 16;
+            <string>dist = 32;
+x_change = 0;
+y_change = 0;
+
+player_angle = 0;
 </string>
           </argument>
         </arguments>
@@ -48,8 +52,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = obj_Player.x + dist*cos(obj_Player.image_angle);
-y = obj_Player.y + dist*sin(obj_Player.image_angle);
+            <string>player_angle = obj_Player.image_angle;
+
+if(player_angle == 90){
+    x_change = 0;
+    y_change = dist;
+}
+else if(player_angle == 270){
+    x_change = 0;
+    y_change = -dist;
+}
+else if(player_angle == 0){
+    x_change = dist;
+    y_change = 0;
+}
+else if(player_angle == 180){
+    x_change = -dist;
+    y_change = 0;
+}
+else{
+    x_change = (180 * pi / cos(obj_Player.image_angle));
+    y_change = (180 * pi / sin(obj_Player.image_angle));
+}
+
+
+x = obj_Player.x + x_change;
+y = obj_Player.y + y_change;
 </string>
           </argument>
         </arguments>
