@@ -48,7 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>x = obj_Player.x + dist*cos(obj_Player.image_angle);
+y = obj_Player.y + dist*sin(obj_Player.image_angle);
+</string>
           </argument>
         </arguments>
       </action>
