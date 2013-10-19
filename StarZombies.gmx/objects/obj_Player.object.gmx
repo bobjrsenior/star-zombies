@@ -28,6 +28,8 @@
             <string>//Players Directional Speed
 hsp = 0;
 vsp = 0;
+
+angle = 0;
 </string>
           </argument>
         </arguments>
@@ -55,7 +57,36 @@ a = keyboard_check_direct(ord('A'));
 s = keyboard_check_direct(ord('S'));
 d = keyboard_check_direct(ord('D'));
 
-image_angle = 1/(tan((obj_cursor.x - x) / (obj_cursor.y - y)));
+x_change = obj_Cursor.x - x;
+y_change = obj_Cursor.y - y;
+
+if(x_change == 0){
+    if(y_change &gt; 0){
+        angle = 90;
+    }
+    else{
+        angle = 270;
+    }
+}
+else if(y_change == 0){
+    if(x_change &gt; 0){
+        angle = 0;
+    }
+    else{
+        angle = 180;
+    }
+}
+else{
+    angle = 180 * (pi / ((1/(tan((obj_Cursor.y - y) / (obj_Cursor.x - x))))));
+    while(angle &lt; 0){
+        angle += 360; 
+    }
+    while(angle &gt; 360){
+        angle -= 360;
+    }
+}
+
+image_angle = -angle;
 
 if(w){
     vsp = -4;
