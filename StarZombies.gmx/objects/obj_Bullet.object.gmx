@@ -33,6 +33,10 @@ hsp = velocity*cos(-2 * pi * (angle / 360));
 vsp = velocity*sin(-2 * pi * (angle / 360));
 
 count = 0;
+
+death_delay = 34;
+
+switch_dir = false;
 </string>
           </argument>
         </arguments>
@@ -57,8 +61,7 @@ count = 0;
             <kind>1</kind>
             <string>count ++;
 
-x += hsp;
-y += vsp;
+
 
 ///collision~
 if (place_meeting(x+hsp,y,obj_Wall))
@@ -66,18 +69,30 @@ if (place_meeting(x+hsp,y,obj_Wall))
     while(!place_meeting(x,y,obj_Wall)){
         x += sign(hsp);
     }
-    hsp *= -1;
+    hsp *= -.25;
+    count += 5;
+    switch_dir = true;
 }
 if (place_meeting(x,y+vsp,obj_Wall))
 {
     while(!place_meeting(x,y,obj_Wall)){
         y += sign(vsp);
     }
-    vsp *= -1;
+    vsp *= -.25;
+    count += 5;
+    switch_dir = true;
 }
 
-if(count == 43){
+if(count &gt;= death_delay){
     instance_destroy();
+}
+
+if(!switch_dir){
+    x += hsp;
+    y += vsp;
+}
+else{
+    switch_dir = false;
 }
 </string>
           </argument>
