@@ -31,8 +31,8 @@ y_change = 0;
 angle = 0;
 
 
-fire_delay = 30;
-delay_counter = 30;
+fire_delay = 0;
+delay_counter = 0;
 </string>
           </argument>
         </arguments>
