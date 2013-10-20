@@ -1287,50 +1287,8 @@
     <instance objName="obj_Wall" x="1024" y="704" name="inst_8829D9DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Wall" x="1024" y="736" name="inst_8133E7DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Wall" x="1024" y="768" name="inst_40EA9CC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Shotgun" x="-64" y="-96" name="inst_BFFD9090" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_UnbreakableWall" x="0" y="0" name="inst_D537F309" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menuController" x="-32" y="0" name="inst_65A5D57E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Wall" x="0" y="256" name="inst_B586ACE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="-32" y="-32" name="inst_A62F0F88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="0" y="-32" name="inst_45CEA884" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="32" y="-32" name="inst_42F68267" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="64" y="-32" name="inst_C098E99B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Weapon_Parent" x="-32" y="32" name="inst_47A5A23A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="96" y="-32" name="inst_9A1C402C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="128" y="-32" name="inst_00B42E58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="160" y="-32" name="inst_D55B90DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="192" y="-32" name="inst_0A81BB76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="224" y="-32" name="inst_84FBDFDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="256" y="-32" name="inst_38EB5B94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="288" y="-32" name="inst_4C8BC3FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="320" y="-32" name="inst_4736BD7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="352" y="-32" name="inst_C8A11361" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="384" y="-32" name="inst_DAB7371E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="416" y="-32" name="inst_307E5311" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="448" y="-32" name="inst_621754DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="480" y="-32" name="inst_EEE6463D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="512" y="-32" name="inst_EE154A50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="544" y="-32" name="inst_2140FDD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="576" y="-32" name="inst_DF96DD9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="608" y="-32" name="inst_E23287F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="640" y="-32" name="inst_39F822DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="672" y="-32" name="inst_F9A05A15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="704" y="-32" name="inst_3085DEA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="736" y="-32" name="inst_D900EF7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="768" y="-32" name="inst_316B9AEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="800" y="-32" name="inst_13A85240" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="832" y="-32" name="inst_1EB10053" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="864" y="-32" name="inst_0E804276" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="896" y="-32" name="inst_F4F207A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="928" y="-32" name="inst_E2B2D2BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="960" y="-32" name="inst_B40EA756" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="992" y="-32" name="inst_DE418018" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="1024" y="-32" name="inst_62665662" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="1056" y="-32" name="inst_97DC0273" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_UnbreakableWall" x="2208" y="-32" name="inst_163450C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="-32" y="-32" name="inst_7B904B61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bullet_Dmg" x="-32" y="-64" name="inst_1AF02FDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Laser" x="-160" y="-32" name="inst_0B2F3BAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japanman" x="672" y="576" name="inst_3E68F3AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy2" x="480" y="224" name="inst_4B496CDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy2" x="544" y="192" name="inst_F3B0F5DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1345,10 +1303,7 @@
     <instance objName="obj_Henchman" x="896" y="160" name="inst_44670063" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Henchman" x="992" y="160" name="inst_C53F0C4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Henchman" x="864" y="320" name="inst_821E48AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Cursor" x="-64" y="-32" name="inst_C08B9558" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bullet" x="-62" y="32" name="inst_6523CDAB" locked="0" code="" scaleX="0.125" scaleY="0.125" colour="4294967295" rotation="0"/>
     <instance objName="obj_Player" x="96" y="384" name="inst_3815451B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Gun" x="-32" y="-96" name="inst_3D9464C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
