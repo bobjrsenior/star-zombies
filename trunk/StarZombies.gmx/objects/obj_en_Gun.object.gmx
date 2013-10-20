@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dist = 8;
+            <string>dist = 11;
 x_change = 0;
 y_change = 0;
 angle = 0;
