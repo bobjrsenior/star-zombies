@@ -42,6 +42,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bk_startScreen</background>
+    <background>background\bg_new_Startscreen</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -98,8 +99,8 @@
     <object>objects\obj_kill_box</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_Area_2</room>
     <room>rooms\rm_gameStartScreen</room>
+    <room>rooms\rm_Area_2</room>
     <room>rooms\rm_fullLevelTest</room>
     <room>rooms\rm2_pauseMenu</room>
     <room>rooms\rm_levelTest</room>
