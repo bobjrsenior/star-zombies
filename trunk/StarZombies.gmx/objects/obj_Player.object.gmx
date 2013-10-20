@@ -272,7 +272,7 @@ else if(keyboard_check_direct(ord('3'))){      //laser
             <kind>1</kind>
             <string>if (health1 &lt;= 0) {
     show_message("you lose!");
-    game_end(); 
+    game_restart(); 
 }
 </string>
           </argument>
