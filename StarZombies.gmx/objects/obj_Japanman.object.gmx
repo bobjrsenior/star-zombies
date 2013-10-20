@@ -105,7 +105,7 @@ if(dist &lt;= vision){
     theta = degtorad(theta)
     hsp = velocity*cos(theta);
     vsp = -velocity*sin(theta);
-    line = collision_line(x, y, obj_Player.x + 17*x_dir, obj_Player.y + 17*y_dir, obj_Wall, false, true);
+    line = collision_line(x, y, obj_Player.x + 17*x_dir, obj_Player.y + 17*y_dir, obj_PlayerCollidable, false, true);
     if(line == noone){
         hsp = velocity*cos(theta);
         vsp = -velocity*sin(theta);
@@ -131,7 +131,7 @@ else if(charge){
         theta = degtorad(theta)
         hsp = velocity*cos(theta);
         vsp = -velocity*sin(theta);
-        line = collision_line(x, y, obj_Player.x + 17*x_dir, obj_Player.y + 17*y_dir, obj_Wall, false, true);
+        line = collision_line(x, y, obj_Player.x + 17*x_dir, obj_Player.y + 17*y_dir, obj_PlayerCollidable, false, true);
         if(line == noone){
             hsp = velocity*cos(theta);
             vsp = -velocity*sin(theta);
