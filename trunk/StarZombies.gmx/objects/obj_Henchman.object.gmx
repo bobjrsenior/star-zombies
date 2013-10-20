@@ -67,7 +67,7 @@ y_change = y - y_old;
 
 Grid = mp_grid_create(0,0,room_width/32,room_height/32,32,32);
 Path = path_add();
-mp_grid_add_instances(Grid,obj_Wall,0);
+mp_grid_add_instances(Grid,obj_PlayerCollidable,0);
 mp_grid_path(Grid,Path,x,y,obj_Player.x,obj_Player.y,1);
 path_start(Path,3,2,1);
 </string>
@@ -97,7 +97,7 @@ path_start(Path,3,2,1);
 
 x_change = x - x_old;
 y_change = y - y_old;
-move_check = (x_change == 0 || x_change == 0);
+move_check = (x_change != 0 || x_change != 0);
 x_old = x;
 y_old = y;
 frame_count += 1;
@@ -127,11 +127,11 @@ else if(y_change &gt; 0){
     move_dir = 1;
 }
 
-if(x_change &lt; 0){
+if(x_change &gt; 0){
     image_index = 9 + (frame_index);
     move_dir = 2;
 }
-else if(x_change &gt; 0){
+else if(x_change &lt; 0){
     image_index = 13 + (frame_index);
     move_dir = 3;
 }
@@ -172,7 +172,7 @@ else if(move_dir == 3 &amp;&amp; !move_check){
             <kind>1</kind>
             <string>health1 -= obj_Bullet_Dmg.laser;
 
-if (health1 == 0)
+if (health1 &lt;= 0)
     instance_destroy();
 </string>
           </argument>
@@ -198,7 +198,7 @@ if (health1 == 0)
             <kind>1</kind>
             <string>health1 -= obj_Bullet_Dmg.shotgun;
 
-if (health1 == 0)
+if (health1 &lt;= 0)
     instance_destroy();
 </string>
           </argument>
@@ -224,7 +224,7 @@ if (health1 == 0)
             <kind>1</kind>
             <string>health1 -= obj_Bullet_Dmg.pistol;
 
-if (health1 == 0)
+if (health1 &lt;= 0)
     instance_destroy();
 </string>
           </argument>

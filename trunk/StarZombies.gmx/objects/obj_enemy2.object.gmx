@@ -160,7 +160,7 @@ if (health1 &lt;= 0)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_Wall">
+    <event eventtype="4" ename="obj_PlayerCollidable">
       <action>
         <libid>1</libid>
         <id>115</id>

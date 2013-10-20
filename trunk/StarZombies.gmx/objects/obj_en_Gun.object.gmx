@@ -57,15 +57,15 @@ delay_counter = 0;
             <kind>1</kind>
             <string>if(obj_Weapon_Parent.weapon == 1){
     visible = true;
-    angle = obj_Player.image_angle;
+    angle = obj_Japanmanimage_angle;
     
     x_change = dist*cos(-2 * pi * (angle / 360));
     y_change = dist*sin(-2 * pi * (angle / 360));
     x_gun_change = (dist + 16)*cos(-2 * pi * (angle / 360));
     y_gun_change = (dist + 8)*sin(-2 * pi * (angle / 360));
     
-    x = obj_Player.x + x_change;
-    y = obj_Player.y + y_change;
+    x = obj_Japanmanx + x_change;
+    y = obj_Japanmany + y_change;
     image_angle = angle;
     
     
