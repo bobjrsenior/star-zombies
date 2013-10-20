@@ -92,6 +92,7 @@
       <object>objects\obj_Wall</object>
       <object>objects\obj_PlayerCollidable</object>
     </objects>
+    <object>objects\obj_kill_box</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_gameStartScreen</room>
