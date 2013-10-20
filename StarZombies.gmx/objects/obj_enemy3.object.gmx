@@ -205,8 +205,7 @@ if (health1 &lt;= 0)
 //Set font preferences
 draw_set_color(c_black);
 draw_set_font(fnt_main);
-draw_text(10,10,hspeed);
-draw_text(10,30,vspeed);
+
 draw_healthbar(x-15,y-15,x+15,y-20,health1,c_black,c_red,c_green,0,true,true);
 </string>
           </argument>

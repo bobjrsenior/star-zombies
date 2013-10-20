@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health1 = 50;
+            <string>maxHitpoints = 100;
+health1 = maxHitpoints;
 
 //Players Directional Speed
 hsp = 0;
@@ -43,7 +44,7 @@ theta = 0;
 
 charge = false;
 charge_count = 0;
-
+vision = 6 * 32;
 
 angle = 0;
 image_speed = 0;
@@ -52,8 +53,7 @@ frame_count = 0;
 frame_dir = 1;
 frame_index = 0;
 move_dir = 0;
-hitpoints = 100;
-maxHitpoints = 100;
+
 
 </string>
           </argument>
@@ -82,9 +82,9 @@ y_change = y - obj_Player.y;
 x_dir = sign(x_change);
 y_dir = sign(y_change);
 dist_sqr = x_change * x_change + y_change * y_change;
-dist = sqrt(dist);
+dist = sqrt(dist_sqr);
 
-if(dist &lt;= 129){
+if(dist &lt;= vision){
     theta = point_direction(x, y, obj_Player.x, obj_Player.y);
     theta = degtorad(theta)
     hsp = velocity*cos(theta);
@@ -110,7 +110,7 @@ else if(charge){
     dist_sqr = x_change * x_change + y_change * y_change;
     dist = sqrt(dist);
     
-    if(dist &lt;= 129){
+    if(dist &lt;= vision){
         theta = point_direction(x, y, obj_Player.x, obj_Player.y);
         theta = degtorad(theta)
         hsp = velocity*cos(theta);
@@ -159,9 +159,14 @@ if(charge_count &gt; 60){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health1 -= obj_Bullet_Dmg.laser;
+            <string>if(dist &gt;= vision){
+    charge = true;
+    charge_count = 0;
+}
 
-if (health1 == 0)
+health1 -= obj_Bullet_Dmg.laser;
+
+if (health1 &lt;= 0)
     instance_destroy();
 </string>
           </argument>
@@ -185,9 +190,14 @@ if (health1 == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health1 -= obj_Bullet_Dmg.shotgun;
+            <string>if(dist &gt;= vision){
+    charge = true;
+    charge_count = 0;
+}
 
-if (health1 == 0)
+health1 -= obj_Bullet_Dmg.shotgun;
+
+if (health1 &lt;= 0)
     instance_destroy();
 </string>
           </argument>
@@ -211,14 +221,14 @@ if (health1 == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(dist &gt; 129){
+            <string>if(dist &gt;= vision){
     charge = true;
     charge_count = 0;
 }
 
 health1 -= obj_Bullet_Dmg.pistol;
 
-if (health1 == 0)
+if (health1 &lt;= 0)
     instance_destroy();
 </string>
           </argument>
