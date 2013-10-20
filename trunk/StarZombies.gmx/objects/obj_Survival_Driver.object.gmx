@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>count = 0;
 count2 = 0;
-spawn = 120;
+spawn = 60;
 </string>
           </argument>
         </arguments>
@@ -57,19 +57,21 @@ if(count == spawn){
     if(count2 == 5){
         count2 = 0;
         if(spawn &gt; 5){
-            spawn -= 2;
+            spawn -= 5;
         }
-        value = floor(random_range(0,3));
-        r_x = random_range(64, 1200);
-        r_y = random_range(64, 900);
-        if(value == 0){
-            instance_create(r_x,r_y, obj_Japanman);
-        }
-        else if(value == 1){
-            instance_create(r_x,r_y, obj_Henchman);
-        }
-        else if(value == 2){
-            instance_create(r_x,r_y, obj_enemy2);
+        for(e = 0; e &lt; 2; e ++){
+            value = floor(random_range(0,3));
+            r_x = random_range(64, 1200);
+            r_y = random_range(64, 900);
+            if(value == 0){
+                instance_create(r_x,r_y, obj_Japanman);
+            }
+            else if(value == 1){
+                instance_create(r_x,r_y, obj_Henchman);
+            }
+            else if(value == 2){
+                instance_create(r_x,r_y, obj_enemy2);
+            }
         }
     }
 }
