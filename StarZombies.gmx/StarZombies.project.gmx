@@ -43,7 +43,7 @@
     </sprites>
     <sprite>sprites\spr_turret</sprite>
     <sprite>sprites\spr_UnbreakableWall_Vis</sprite>
-    <sprite>sprites\spr_Carpet</sprite>
+    <sprite>sprites\spr_next_level</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_startScreen</background>
@@ -56,6 +56,7 @@
   <objects name="objects">
     <object>objects\obj_Cursor</object>
     <object>objects\obj_Player</object>
+    <object>objects\obj_Floor</object>
     <objects name="menu objs">
       <object>objects\obj_menuFullscreenButton</object>
       <object>objects\obj_menuOptionsButton</object>
@@ -101,21 +102,19 @@
       <object>objects\obj_PlayerCollidable</object>
     </objects>
     <object>objects\obj_kill_box</object>
-    <objects name="Floors">
-      <object>objects\obj_Floor</object>
-      <object>objects\obj_Carpet</object>
-    </objects>
+    <object>objects\obj_next_level</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_gameStartScreen</room>
-    <room>rooms\rm_fullLevelTest</room>
     <room>rooms\rm_Area_2</room>
+    <room>rooms\rm_fullLevelTest</room>
     <room>rooms\rm2_pauseMenu</room>
     <room>rooms\rm_levelTest</room>
     <room>rooms\room10</room>
     <room>rooms\rm_rfs</room>
     <room>rooms\room7</room>
     <room>rooms\rm_main</room>
+    <room>rooms\room11</room>
     <room>rooms\rm_Cutscene_1</room>
   </rooms>
   <help>
