@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dist = 8;
+            <string>dist = 18;
 x_change = 0;
 y_change = 0;
 angle = 0;
@@ -61,8 +61,8 @@ delay_counter = 0;
     
     x_change = dist*cos(-2 * pi * (angle / 360));
     y_change = dist*sin(-2 * pi * (angle / 360));
-    x_gun_change = (dist + 16)*cos(-2 * pi * (angle / 360));
-    y_gun_change = (dist + 16)*sin(-2 * pi * (angle / 360));
+    x_gun_change = (dist + 12)*cos(-2 * pi * (angle / 360));
+    y_gun_change = (dist + 8)*sin(-2 * pi * (angle / 360));
     
     x = obj_Player.x + x_change;
     y = obj_Player.y + y_change;
