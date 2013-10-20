@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Players Directional Speed
+            <string>maxHitpoints = 100;
+health1 = maxHitpoints;
+
+//Players Directional Speed
 hsp = 0;
 vsp = 0;
 
@@ -36,8 +39,6 @@ frame_count = 0;
 frame_dir = 1;
 frame_index = 0;
 move_dir = 0;
-hitpoints = 100;
-maxHitpoints = 100;
 
 </string>
           </argument>
@@ -238,7 +239,7 @@ y += vsp;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (hitpoints &lt;= 0) {
+            <string>if (health1 &lt;= 0) {
     show_message("you lose!");
     game_end(); 
 }
@@ -286,7 +287,7 @@ draw_set_font(fnt_main);
 //Draws Health in the topleft corner of screen
 //draw_text(10,10,"Health: " + string(obj_Player.hitpoints));  
 
-draw_healthbar(x-15,y-15,x+15,y-20,obj_Player.hitpoints,c_black,c_red,c_green,0,true,true);
+draw_healthbar(x-15,y-15,x+15,y-20,health1,c_black,c_red,c_green,0,true,true);
 </string>
           </argument>
         </arguments>

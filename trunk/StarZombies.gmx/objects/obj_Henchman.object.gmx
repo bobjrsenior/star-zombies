@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_Enemy_Parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -160,7 +160,7 @@ else if(move_dir == 3 &amp;&amp; !move_check){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health1 -= obj_Weapon_Parent.laser;
+            <string>health1 -= obj_Bullet_Dmg.laser;
 
 if (health1 == 0)
     instance_destroy();
@@ -186,7 +186,7 @@ if (health1 == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health1 -= obj_Weapon_Parent.shotgun;
+            <string>health1 -= obj_Bullet_Dmg.shotgun;
 
 if (health1 == 0)
     instance_destroy();
@@ -212,7 +212,7 @@ if (health1 == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health1 -= obj_Weapon_Parent.pistol;
+            <string>health1 -= obj_Bullet_Dmg.pistol;
 
 if (health1 == 0)
     instance_destroy();
@@ -256,38 +256,8 @@ if (health1 == 0)
 //Set font preferences
 draw_set_color(c_black);
 draw_set_font(fnt_main);
-draw_text(10,10,hspeed);
-draw_text(10,30,vspeed);
-draw_healthbar(x-15,y-15,x+15,y-20,health1,c_black,c_red,c_green,0,true,true);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>messageNum = random(1);
 
-if (messageNum = 0)
-{
-    draw_text(x+2,y-2,"Gonna get you~")
-}else if (messageNum = 1)
-{
-    draw_text(x+2,y-2,"I seee you~")
-}
+draw_healthbar(x-15,y-15,x+15,y-20,health1,c_black,c_red,c_green,0,true,true);
 </string>
           </argument>
         </arguments>
