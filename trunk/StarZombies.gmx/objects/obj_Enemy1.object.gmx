@@ -28,13 +28,19 @@
             <string>//Players Directional Speed
 hsp = 0;
 vsp = 0;
-
-velocity = 6;
-
+//Total Spped allowed (Hypotenuse)
+velocity = 3;
+//(Distance to player on an axis)
 x_change = 0;
 y_change = 0;
+//Total Distance to player/distance squared
 dist = 0;
+dist_sqr = 0;
+//angle to player
 theta = 0;
+
+health1 = 50;
+
 
 angle = 0;
 image_speed = 0;
@@ -72,22 +78,25 @@ maxHitpoints = 100;
 y_change = y - obj_Player.y;
 x_dir = sign(x_change);
 y_dir = sign(y_change);
-dist = sqrt(x_change * x_change + y_change * y_change);
+dist_sqr = x_change * x_change + y_change * y_change;
+dist = sqrt(dist);
 
 if(dist &lt;= 129){
     theta = point_direction(x, y, obj_Player.x, obj_Player.y);
-
+    theta = degtorad(theta)
     theta *= 1;
-    line = collision_line(obj_Player.x + 17*x_dir, obj_Player.y + 17*y_dir, x + 11*x_dir, y + 16*y_dir, obj_Wall, false, true);
+    hsp = velocity*cos(theta);
+    vsp = -velocity*sin(theta);
+    line = collision_line(x, y, obj_Player.x + 17*x_dir, obj_Player.y + 17*y_dir, obj_Wall, false, true);
     if(line == noone){
         hsp = velocity*cos(theta);
-        vsp = -velocity*sign(theta);
+        vsp = -velocity*sin(theta);
         x += hsp;
         y += vsp;
     }
     else{
-        hsp = 0;
-        vsp = 0;
+        //hsp = 0;
+        //vsp = 0;
     }
 
 }
