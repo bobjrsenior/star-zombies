@@ -66,18 +66,18 @@ death_delay2 = 2;
 
 
 ///collision~
-if (place_meeting(x+hsp,y,obj_Wall))
+if (place_meeting(x+hsp,y,obj_PlayerCollidable))
 {
-    while(!place_meeting(x,y,obj_Wall)){
+    while(!place_meeting(x,y,obj_PlayerCollidable)){
         x += sign(hsp);
     }
     hsp *= -.25;
     count += 5;
     switch_dir = true;
 }
-if (place_meeting(x,y+vsp,obj_Wall))
+if (place_meeting(x,y+vsp,obj_PlayerCollidable))
 {
-    while(!place_meeting(x,y,obj_Wall)){
+    while(!place_meeting(x,y,obj_PlayerCollidable)){
         y += sign(vsp);
     }
     vsp *= -.25;

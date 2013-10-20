@@ -33,6 +33,8 @@ angle = 0;
 
 fire_delay = 0;
 delay_counter = 0;
+
+var track;
 </string>
           </argument>
         </arguments>
@@ -55,32 +57,26 @@ delay_counter = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_Weapon_Parent.weapon == 1){
-    visible = true;
-    angle = obj_Japanmanimage_angle;
-    
-    x_change = dist*cos(-2 * pi * (angle / 360));
-    y_change = dist*sin(-2 * pi * (angle / 360));
-    x_gun_change = (dist + 16)*cos(-2 * pi * (angle / 360));
-    y_gun_change = (dist + 8)*sin(-2 * pi * (angle / 360));
-    
-    x = obj_Japanmanx + x_change;
-    y = obj_Japanmany + y_change;
-    image_angle = angle;
-    
-    
-    if(delay_counter &gt;= fire_delay &amp;&amp; mouse_check_button_pressed(mb_left)){
-        instance_create(x + x_gun_change, y + y_gun_change, obj_Bullet);
-        delay_counter = 0;
-    }
-    else if(delay_counter &lt; fire_delay){
-        delay_counter ++;
-    }
-}
-else{
-    visible = false;
-}
+            <string>visible = true;
+angle = track.image_angle;
 
+x_change = dist*cos(-2 * pi * (angle / 360));
+y_change = dist*sin(-2 * pi * (angle / 360));
+x_gun_change = (dist + 16)*cos(-2 * pi * (angle / 360));
+y_gun_change = (dist + 8)*sin(-2 * pi * (angle / 360));
+
+x = track.x + x_change;
+y = track.y + y_change;
+image_angle = angle;
+
+
+if(delay_counter &gt;= fire_delay &amp;&amp; mouse_check_button_pressed(mb_left)){
+    instance_create(x + x_gun_change, y + y_gun_change, obj_Bullet);
+    delay_counter = 0;
+}
+else if(delay_counter &lt; fire_delay){
+    delay_counter ++;
+}
 </string>
           </argument>
         </arguments>
