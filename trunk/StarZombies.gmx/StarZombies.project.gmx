@@ -112,6 +112,7 @@
       <object>objects\obj_Carpet</object>
       <object>objects\obj_Japan_Floor</object>
     </objects>
+    <object>objects\obj_end_game</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_gameStartScreen</room>
