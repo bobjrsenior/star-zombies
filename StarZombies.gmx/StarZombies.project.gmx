@@ -102,6 +102,7 @@
     <room>rooms\rm_rfs</room>
     <room>rooms\room7</room>
     <room>rooms\rm_main</room>
+    <room>rooms\rm_Cutscene_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
