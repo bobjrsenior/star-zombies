@@ -3,7 +3,7 @@
   <spriteName>spr_Shotgun</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -39,6 +39,8 @@ firing_count = 0;
 burst_size = 10;
 burst_depth = 3;
 burst_angle = 15;
+
+var track;
 </string>
           </argument>
         </arguments>
@@ -61,63 +63,59 @@ burst_angle = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_Weapon_Parent.weapon == 2){
-    visible = true;
-    angle = obj_Player.image_angle;
-    
-    x_change = dist*cos(-2 * pi * (angle / 360));
-    y_change = dist*sin(-2 * pi * (angle / 360));
-    x_gun_change = (dist + 11)*cos(-2 * pi * (angle / 360));
-    y_gun_change = (dist + 7)*sin(-2 * pi * (angle / 360));
-    
-    x = obj_Player.x + x_change;
-    y = obj_Player.y + y_change;
-    image_angle = angle;
-    
-    
-    if(delay_counter &gt;= fire_delay &amp;&amp; mouse_check_button_pressed(mb_left)){
-        fire = true;
-        counter = 0;
-        max_angle = angle + burst_angle;
-        min_angle = angle - burst_angle;
-        var bullet;
-        while(counter &lt; burst_size){
-            bullet = instance_create(x + x_gun_change, y + y_gun_change, obj_Shotgun_Bullet);
-            angle_bullet = random_range(min_angle,max_angle);
-            bullet.hsp = obj_Shotgun_Bullet.velocity * cos(-2 * pi * (angle_bullet / 360));
-            bullet.vsp = obj_Shotgun_Bullet.velocity * sin(-2 * pi * (angle_bullet / 360));
-            counter ++;
-        }
-        delay_counter = 0;
+            <string>visible = true;
+angle = track.image_angle;
+
+x_change = dist*cos(-2 * pi * (angle / 360));
+y_change = dist*sin(-2 * pi * (angle / 360));
+x_gun_change = (dist + 11)*cos(-2 * pi * (angle / 360));
+y_gun_change = (dist + 7)*sin(-2 * pi * (angle / 360));
+
+x = track.x + x_change;
+y = track.y + y_change;
+image_angle = angle;
+
+
+if(delay_counter &gt;= fire_delay &amp;&amp; mouse_check_button_pressed(mb_left)){
+    fire = true;
+    counter = 0;
+    max_angle = angle + burst_angle;
+    min_angle = angle - burst_angle;
+    var bullet;
+    while(counter &lt; burst_size){
+        bullet = instance_create(x + x_gun_change, y + y_gun_change, obj_Shotgun_Bullet);
+        angle_bullet = random_range(min_angle,max_angle);
+        bullet.hsp = bullet.velocity * cos(-2 * pi * (angle_bullet / 360));
+        bullet.vsp = bullet.velocity * sin(-2 * pi * (angle_bullet / 360));
+        counter ++;
     }
-    else if(delay_counter &lt; fire_delay &amp;&amp; !fire){
-        delay_counter ++;
+    delay_counter = 0;
+}
+else if(delay_counter &lt; fire_delay &amp;&amp; !fire){
+    delay_counter ++;
+}
+if(fire){
+    counter = 0;
+    firing_count ++;
+    if(firing_count == burst_depth){
+        fire = false;
     }
-    if(fire){
-        counter = 0;
-        firing_count ++;
-        if(firing_count == burst_depth){
-            fire = false;
-        }
-        max_angle = angle + 15;
-        min_angle = angle - 15;
-        var bullet;
-        while(counter &lt; burst_size){
-            bullet = instance_create(x + x_gun_change, y + y_gun_change, obj_Shotgun_Bullet);
-            angle_bullet = random_range(min_angle,max_angle);
-            bullet.hsp = obj_Shotgun_Bullet.velocity * cos(-2 * pi * (angle_bullet / 360));
-            bullet.vsp = obj_Shotgun_Bullet.velocity * sin(-2 * pi * (angle_bullet / 360));
-            counter ++;
-        }
-        delay_counter = 0;
+    max_angle = angle + 15;
+    min_angle = angle - 15;
+    var bullet;
+    while(counter &lt; burst_size){
+        bullet = instance_create(x + x_gun_change, y + y_gun_change, obj_Shotgun_Bullet);
+        angle_bullet = random_range(min_angle,max_angle);
+        bullet.hsp = bullet.velocity * cos(-2 * pi * (angle_bullet / 360));
+        bullet.vsp = bullet.velocity * sin(-2 * pi * (angle_bullet / 360));
+        counter ++;
     }
-    else{
-        firing_count = 0;
-    }
+    delay_counter = 0;
 }
 else{
-    visible = false;
+    firing_count = 0;
 }
+
 </string>
           </argument>
         </arguments>
