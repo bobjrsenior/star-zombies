@@ -52,7 +52,7 @@ image_speed = 0;
             <kind>1</kind>
             <string>///change sprite to reflect damage taken
 
-if (place_meeting(x,y,obj_Bullet))
+if (place_meeting(x,y,obj_Bullet_Dmg))
 {
     hitpoints -= 1;
     

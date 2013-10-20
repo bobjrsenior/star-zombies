@@ -1341,6 +1341,8 @@
     <instance objName="obj_UnbreakableWall" x="1056" y="-32" name="inst_97DC0273" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_UnbreakableWall" x="2208" y="-32" name="inst_163450C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Gun" x="0" y="-96" name="inst_3D9464C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Enemy_Parent" x="0" y="-96" name="inst_7B904B61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Bullet_Dmg" x="-32" y="-64" name="inst_1AF02FDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
