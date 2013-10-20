@@ -35,6 +35,12 @@ frame_dir = 1;
 frame_index = 0;
 move_dir = 0;
 image_speed = 0;
+
+//Detects movement
+x_old = x;
+y_old = y;
+x_change = x - x_old;
+y_change = y - y_old;
 </string>
           </argument>
         </arguments>
@@ -88,8 +94,12 @@ path_start(Path,3,2,1);
 ///Changes the sprite based on direction
 
 //Determines if the henchmen is moving or not
-move_check = (hspeed != 0 || vspeed != 0);
 
+x_change = x - x_old;
+y_change = y - y_old;
+move_check = (x_change == 0 || x_change == 0);
+x_old = x;
+y_old = y;
 frame_count += 1;
 if(frame_count &gt;= 15){
     frame_index += frame_dir;
@@ -104,29 +114,29 @@ if(frame_count &gt;= 15){
     frame_count = 0;
 }
 
-if(vspeed &lt; 0){
+if(y_change &lt; 0){
     if(hspeed == 0){
         image_index = 1 + (frame_index);
     }
     move_dir = 0;
 }
-else if(vspeed &gt; 0){
+else if(y_change &gt; 0){
     if(hspeed == 0){
         image_index = 5 + (frame_index);
     }
     move_dir = 1;
 }
 
-if(hspeed &lt; 0){
+if(x_change &lt; 0){
     image_index = 9 + (frame_index);
     move_dir = 2;
 }
-else if(hspeed &gt; 0){
+else if(x_change &gt; 0){
     image_index = 13 + (frame_index);
     move_dir = 3;
 }
 
-/*if(move_dir == 0 &amp;&amp; !move_check){
+if(move_dir == 0 &amp;&amp; !move_check){
     image_index = 0;
 }
 else if(move_dir == 1 &amp;&amp; !move_check){
@@ -137,7 +147,7 @@ else if(move_dir == 2 &amp;&amp; !move_check){
 }
 else if(move_dir == 3 &amp;&amp; !move_check){
     image_index = 12;
-}*/
+}
 </string>
           </argument>
         </arguments>
