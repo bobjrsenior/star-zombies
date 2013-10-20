@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-1</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_Enemy_Parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -272,7 +272,7 @@ draw_set_color(c_black);
 draw_set_font(fnt_main);
 
 
-draw_healthbar(x-15,y-15,x+15,y-20,obj_Player.hitpoints,c_black,c_red,c_green,0,true,true);
+draw_healthbar(x-15,y-15,x+15,y-20,health1,c_black,c_red,c_green,0,true,true);
 </string>
           </argument>
         </arguments>
