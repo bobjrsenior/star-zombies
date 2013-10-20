@@ -9,6 +9,7 @@
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\spr_Cursor</sprite>
+    <sprite>sprites\spr_Henchman</sprite>
     <sprite>sprites\spr_Player</sprite>
     <sprites name="menu sprites">
       <sprite>sprites\spr_menuBackground</sprite>
@@ -47,6 +48,7 @@
   <objects name="objects">
     <object>objects\obj_Cursor</object>
     <object>objects\obj_Player</object>
+    <object>objects\obj_Henchman</object>
     <object>objects\obj_Floor</object>
     <objects name="menu objs">
       <object>objects\obj_menuFullscreenButton</object>
