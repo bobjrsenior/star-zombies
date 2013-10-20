@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///weapon damage
-weapon = 1;
+global.weapon = 1;
 </string>
           </argument>
         </arguments>
@@ -56,13 +56,13 @@ laser = keyboard_check_direct(ord('3'));
 ///Weapon switching control keys
 
 if(pistol){       //pistol
-    weapon = 1;
+    global.weapon = 1;
 }
 else if (shotgun){      //shotgun
-    weapon = 2;
+    global.weapon = 2;
 }
 else if(laser){      //laser
-    weapon = 3;
+    global.weapon = 3;
 }
 </string>
           </argument>
