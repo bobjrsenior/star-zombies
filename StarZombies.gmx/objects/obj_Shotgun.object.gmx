@@ -31,8 +31,8 @@ y_change = 0;
 angle = 0;
 
 
-fire_delay = 0;
-delay_counter = 0;
+fire_delay = 15;
+delay_counter = 15;
 
 fire = false;
 firing_count = 0;
