@@ -61,8 +61,7 @@ maxHitpoints = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///movement control
-w = keyboard_check_direct(ord('W'));
+            <string>w = keyboard_check_direct(ord('W'));
 a = keyboard_check_direct(ord('A'));
 s = keyboard_check_direct(ord('S'));
 d = keyboard_check_direct(ord('D'));
@@ -91,7 +90,7 @@ image_angle += sign(diff) * 1000;
 frame_count += 1;
 if(frame_count &gt;= 15){
     frame_index += frame_dir;
-    if(frame_index &gt;= 2){
+    if(frame_index &gt;= 3){
         frame_dir *= -1;
         frame_index += frame_dir;
     }
@@ -239,12 +238,10 @@ y += vsp;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///death message
-
-if (hitpoints &lt;= 0) {
+            <string>if (hitpoints &lt;= 0) {
     show_message("you lose!");
     game_end(); 
-    }
+}
 </string>
           </argument>
         </arguments>
