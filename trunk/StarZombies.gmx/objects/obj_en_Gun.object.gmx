@@ -60,17 +60,17 @@ var track;
             <string>visible = true;
 angle = track.image_angle;
 
-x_change = dist*cos(-2 * pi * (angle / 360));
-y_change = dist*sin(-2 * pi * (angle / 360));
-x_gun_change = (dist + 16)*cos(-2 * pi * (angle / 360));
-y_gun_change = (dist + 8)*sin(-2 * pi * (angle / 360));
+x_change = dist*cos(degtorad(angle));
+y_change = dist*sin(degtorad(angle));
+x_gun_change = (dist + 16)*cos(degtorad((angle)));
+y_gun_change = (dist + 8)*sin(degtorad((angle)));
 
 x = track.x + x_change;
 y = track.y + y_change;
 image_angle = angle;
 
 
-if(delay_counter &gt;= fire_delay &amp;&amp; mouse_check_button_pressed(mb_left)){
+if(delay_counter &gt;= fire_delay &amp;&amp; mouse_check_button(mb_left)){
     instance_create(x + x_gun_change, y + y_gun_change, obj_Bullet);
     delay_counter = 0;
 }

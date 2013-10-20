@@ -53,9 +53,9 @@ frame_count = 0;
 frame_dir = 1;
 frame_index = 0;
 move_dir = 0;
-/*
+
 //Chooses the enemies weapon
-weapon = 1;//random_range(1,4);
+weapon = 2;//random_range(1,4);
 if(weapon == 1){
     weapon = instance_create(x + 8, y + 8, obj_en_Gun);
 }
@@ -70,7 +70,7 @@ weapon.track = self;
 
 
 //move_dir = 0;
-*/
+
 </string>
           </argument>
         </arguments>
