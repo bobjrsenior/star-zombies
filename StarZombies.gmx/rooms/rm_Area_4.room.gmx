@@ -1221,8 +1221,17 @@
     <instance objName="obj_Japan_Floor" x="960" y="608" name="inst_1C805001" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Floor" x="928" y="576" name="inst_6AD9A073" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Floor" x="896" y="576" name="inst_8AACAAFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Player" x="96" y="768" name="inst_02885DA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Floor" x="96" y="768" name="inst_7C53BD72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japan_Floor" x="960" y="928" name="inst_905D231C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japan_Floor" x="960" y="896" name="inst_5DDF24BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japan_Floor" x="960" y="864" name="inst_DAE30461" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japan_Floor" x="960" y="832" name="inst_5BBE2E7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japan_Floor" x="960" y="800" name="inst_B6CB8524" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japan_Floor" x="480" y="128" name="inst_F0B4DFBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japan_Floor" x="480" y="160" name="inst_D734C1B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japan_Floor" x="480" y="192" name="inst_ECB6375B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japan_Floor" x="672" y="448" name="inst_188A35B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japan_Floor" x="736" y="480" name="inst_D7C6257D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="64" y="704" name="inst_207A3328" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="96" y="704" name="inst_68FA6248" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="128" y="704" name="inst_A7A5A475" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1261,13 +1270,6 @@
     <instance objName="obj_Japan_Wall" x="64" y="864" name="inst_A658D56F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="32" y="864" name="inst_3E1E5CCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="0" y="864" name="inst_00AF190F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="64" y="640" name="inst_5602F7D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="160" y="640" name="inst_50B2EA99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="288" y="704" name="inst_D79A3847" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="288" y="800" name="inst_0EA206EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="288" y="896" name="inst_1CAA1240" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="192" y="928" name="inst_9A1A4BC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="64" y="928" name="inst_B0F4357F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="384" y="928" name="inst_2344C286" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="384" y="896" name="inst_F68E7706" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="384" y="864" name="inst_9743484E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1336,7 +1338,6 @@
     <instance objName="obj_Japan_Wall" x="128" y="384" name="inst_5AE298E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="128" y="320" name="inst_17618354" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="128" y="288" name="inst_F9E9654B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="64" y="256" name="inst_B1FE0AED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="128" y="256" name="inst_FA437F2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="128" y="224" name="inst_2974A4B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="128" y="192" name="inst_EE76E1CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1404,21 +1405,6 @@
     <instance objName="obj_Japan_Wall" x="1184" y="704" name="inst_57E651B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="1216" y="704" name="inst_D5D352E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="1248" y="704" name="inst_65F4B9F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japan_Floor" x="960" y="928" name="inst_905D231C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japan_Floor" x="960" y="896" name="inst_5DDF24BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japan_Floor" x="960" y="864" name="inst_DAE30461" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japan_Floor" x="960" y="832" name="inst_5BBE2E7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japan_Floor" x="960" y="800" name="inst_B6CB8524" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="1152" y="832" name="inst_5101F9F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="864" y="832" name="inst_7C90D695" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="576" y="832" name="inst_C2F4EA9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="224" y="256" name="inst_1CEA7A0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="608" y="608" name="inst_EC7DCA58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="576" y="192" name="inst_8065DE08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="1056" y="448" name="inst_8B7B9E05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="1056" y="160" name="inst_EEDE3C34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="928" y="96" name="inst_30DB5561" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="1152" y="224" name="inst_A3A009C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="800" y="160" name="inst_7CED5B88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="800" y="128" name="inst_DE188AB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="800" y="160" name="inst_E6EA2B9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1453,10 +1439,6 @@
     <instance objName="obj_Japan_Wall" x="544" y="256" name="inst_8AE10DA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="576" y="256" name="inst_9146FBB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="608" y="256" name="inst_A6A32191" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="704" y="416" name="inst_0A3D4364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="864" y="576" name="inst_B81CD1E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="416" y="416" name="inst_4198ED07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japanman" x="1120" y="608" name="inst_0B3503EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="960" y="544" name="inst_5A8D12CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="960" y="576" name="inst_09C17990" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="960" y="608" name="inst_2F91D01B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1493,11 +1475,6 @@
     <instance objName="obj_Japan_Wall" x="448" y="160" name="inst_24B64A12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="448" y="192" name="inst_83305A6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japan_Wall" x="448" y="224" name="inst_C203AE5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japan_Floor" x="480" y="128" name="inst_F0B4DFBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japan_Floor" x="480" y="160" name="inst_D734C1B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japan_Floor" x="480" y="192" name="inst_ECB6375B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japan_Floor" x="672" y="448" name="inst_188A35B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Japan_Floor" x="736" y="480" name="inst_D7C6257D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_UnbreakableWall" x="1280" y="32" name="inst_E13994E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_UnbreakableWall" x="1280" y="64" name="inst_BE17FBD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_UnbreakableWall" x="1280" y="96" name="inst_3695A873" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1649,19 +1626,43 @@
     <instance objName="obj_UnbreakableWall" x="1248" y="-32" name="inst_E775E239" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_UnbreakableWall" x="1280" y="-32" name="inst_951071CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_UnbreakableWall" x="1280" y="0" name="inst_64B2DFE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Cursor" x="-128" y="-64" name="inst_8966279D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menuController" x="-96" y="-96" name="inst_ABA3622C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bullet_Dmg" x="-64" y="-64" name="inst_3D74F1F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Weapon_Parent" x="-96" y="-64" name="inst_8CAA74F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Laser" x="-224" y="-128" name="inst_922BFCE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Shotgun" x="-192" y="-128" name="inst_BB6D697D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Assault" x="-224" y="-96" name="inst_7D0B0559" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Gun" x="-224" y="-64" name="inst_1C3102C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_UnbreakableWall" x="0" y="-32" name="inst_BCC0804A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_UnbreakableWall" x="-64" y="-32" name="inst_268581B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_UnbreakableWall" x="-32" y="-32" name="inst_6B83883B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_UnbreakableWall" x="-32" y="0" name="inst_59CE25C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_end_game" x="1216" y="32" name="inst_850D6CEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="64" y="640" name="inst_5602F7D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="160" y="640" name="inst_50B2EA99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="288" y="704" name="inst_D79A3847" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="288" y="800" name="inst_0EA206EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="288" y="896" name="inst_1CAA1240" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="192" y="928" name="inst_9A1A4BC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="64" y="928" name="inst_B0F4357F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="64" y="256" name="inst_B1FE0AED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="1152" y="832" name="inst_5101F9F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="864" y="832" name="inst_7C90D695" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="576" y="832" name="inst_C2F4EA9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="224" y="256" name="inst_1CEA7A0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="608" y="608" name="inst_EC7DCA58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="576" y="192" name="inst_8065DE08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="1056" y="448" name="inst_8B7B9E05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="1056" y="160" name="inst_EEDE3C34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="928" y="96" name="inst_30DB5561" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="1152" y="224" name="inst_A3A009C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="704" y="416" name="inst_0A3D4364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="864" y="576" name="inst_B81CD1E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="416" y="416" name="inst_4198ED07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Japanman" x="1120" y="608" name="inst_0B3503EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Laser" x="-224" y="-128" name="inst_922BFCE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Shotgun" x="-192" y="-128" name="inst_BB6D697D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Gun" x="-224" y="-64" name="inst_1C3102C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FireGun" x="0" y="-64" name="inst_37A8D8D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cursor" x="-128" y="-64" name="inst_8966279D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Player" x="96" y="768" name="inst_02885DA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Assault" x="-224" y="-96" name="inst_7D0B0559" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
