@@ -39,6 +39,7 @@
     </sprites>
     <sprite>sprites\spr_turret</sprite>
     <sprite>sprites\spr_UnbreakableWall_Vis</sprite>
+    <sprite>sprites\spr_Carpet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_startScreen</background>
@@ -51,7 +52,6 @@
   <objects name="objects">
     <object>objects\obj_Cursor</object>
     <object>objects\obj_Player</object>
-    <object>objects\obj_Floor</object>
     <objects name="menu objs">
       <object>objects\obj_menuFullscreenButton</object>
       <object>objects\obj_menuOptionsButton</object>
@@ -97,6 +97,10 @@
       <object>objects\obj_PlayerCollidable</object>
     </objects>
     <object>objects\obj_kill_box</object>
+    <objects name="Floors">
+      <object>objects\obj_Floor</object>
+      <object>objects\obj_Carpet</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_gameStartScreen</room>
