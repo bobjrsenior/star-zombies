@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dist = 18;
+            <string>dist = 8;
 x_change = 0;
 y_change = 0;
 angle = 0;
@@ -68,8 +68,8 @@ angle = track.image_angle;
 
 x_change = dist*cos(-2 * pi * (angle / 360));
 y_change = dist*sin(-2 * pi * (angle / 360));
-x_gun_change = (dist + 11)*cos(-2 * pi * (angle / 360));
-y_gun_change = (dist + 7)*sin(-2 * pi * (angle / 360));
+x_gun_change = (dist + 16)*cos(-2 * pi * (angle / 360));
+y_gun_change = (dist + 16)*sin(-2 * pi * (angle / 360));
 
 x = track.x + x_change;
 y = track.y + y_change;
