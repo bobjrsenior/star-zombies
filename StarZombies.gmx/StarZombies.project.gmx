@@ -63,10 +63,8 @@
     <objects name="Enemies">
       <object>objects\obj_Japanman</object>
       <object>objects\obj_Henchman</object>
-      <object>objects\obj_Enemy_Parent</object>
       <object>objects\obj_enemy2</object>
     </objects>
-    <object>objects\obj_PlayerCollidable</object>
     <objects name="Weapons">
       <objects name="Bullets">
         <object>objects\obj_Bullet</object>
@@ -92,13 +90,14 @@
       <object>objects\obj_UnbreakableWall_Vis</object>
       <object>objects\obj_UnbreakableWall</object>
       <object>objects\obj_Wall</object>
+      <object>objects\obj_PlayerCollidable</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_gameStartScreen</room>
-    <room>rooms\rm_levelTest</room>
     <room>rooms\rm_fullLevelTest</room>
     <room>rooms\rm2_pauseMenu</room>
+    <room>rooms\rm_levelTest</room>
     <room>rooms\room10</room>
     <room>rooms\rm_rfs</room>
     <room>rooms\room7</room>

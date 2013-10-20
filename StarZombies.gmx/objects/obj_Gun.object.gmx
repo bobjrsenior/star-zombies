@@ -55,7 +55,7 @@ delay_counter = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_Weapon_Parent.weapon == 1){
+            <string>if(global.weapon == 1){
     visible = true;
     angle = obj_Player.image_angle;
     

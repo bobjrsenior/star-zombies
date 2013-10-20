@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10</depth>
   <persistent>0</persistent>
-  <parentName>obj_Enemy_Parent</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -63,11 +63,17 @@ y_change = y - y_old;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//image_angle = direction;
+            <string>///Path Finding
+image_angle = direction;
+
 
 Grid = mp_grid_create(0,0,room_width/32,room_height/32,32,32);
 Path = path_add();
 mp_grid_add_instances(Grid,obj_PlayerCollidable,0);
+//mp_potential_path(Path, obj_Player.x, obj_Player.y, 6, 4, 1);
+
+mp_grid_add_rectangle(Grid, 0,0,(x-(6*32)),room_height);
+mp_grid_add_rectangle(Grid, room_width,room_height, (x+(6*32)), 0);
 mp_grid_path(Grid,Path,x,y,obj_Player.x,obj_Player.y,1);
 path_start(Path,3,2,1);
 </string>
