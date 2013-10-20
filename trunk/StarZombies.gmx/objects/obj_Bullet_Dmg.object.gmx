@@ -29,6 +29,7 @@
 shotgun = (.5);
 laser = (1.5);
 assault = (1.5)
+firebomb = (2);
 </string>
           </argument>
         </arguments>

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hitpoints = 12; //how many bullets it takes to break the block
+            <string>hitpoints = 25; //how many bullets it takes to break the block
 image_index = 0;
 image_speed = 0;
 </string>
@@ -70,10 +70,34 @@ if (place_meeting(x,y,obj_Bullet_Dmg))
     }else if (hitpoints &gt; 0)
     {
         image_index = 5;
-    }else if (hitpoints = 0)
+    }else if (hitpoints &lt;= 0)
     {
         instance_destroy();
     }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (place_meeting(x,y,obj_Explosion))
+{
+    hitpoints -= (obj_Bullet_Dmg.firebomb/2);
 }
 </string>
           </argument>
