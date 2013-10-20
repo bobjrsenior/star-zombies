@@ -241,7 +241,7 @@ y += vsp;
             <string>if (hitpoints &lt;= 0) {
     show_message("you lose!");
     game_end(); 
-    }
+}
 </string>
           </argument>
         </arguments>

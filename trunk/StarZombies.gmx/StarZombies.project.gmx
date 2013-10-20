@@ -37,9 +37,11 @@
       </sprites>
     </sprites>
     <sprite>sprites\spr_turret</sprite>
+    <sprite>sprites\spr_UnbreakableWall_Vis</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_startScreen</background>
+    <background>background\level1_Draft</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -66,6 +68,7 @@
     <object>objects\obj_enemy2</object>
     <object>objects\obj_Wall</object>
     <object>objects\obj_UnbreakableWall</object>
+    <object>objects\obj_UnbreakableWall_Vis</object>
     <object>objects\obj_PlayerCollidable</object>
     <object>objects\obj_Henchman</object>
     <objects name="Weapons">
@@ -84,8 +87,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_fullLevelTest</room>
-    <room>rooms\rm_gameStartScreen</room>
     <room>rooms\rm_levelTest</room>
+    <room>rooms\rm_gameStartScreen</room>
     <room>rooms\rm2_pauseMenu</room>
     <room>rooms\room10</room>
     <room>rooms\rm_rfs</room>
