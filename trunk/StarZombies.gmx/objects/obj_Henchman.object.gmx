@@ -74,8 +74,8 @@ mp_grid_add_instances(Grid,obj_PlayerCollidable,0);
 
 mp_grid_add_rectangle(Grid, 0,0,(x-(6*32)),room_height);
 mp_grid_add_rectangle(Grid, room_width,room_height, (x+(6*32)), 0);
-mp_grid_path(Grid,Path,x,y,obj_Player.x,obj_Player.y,1);
-path_start(Path,3,2,1);
+mp_grid_path(Grid,Path,x,y,obj_Player.x,obj_Player.y,0);
+path_start(Path,3,2,0);
 </string>
           </argument>
         </arguments>
