@@ -52,6 +52,7 @@ global.weapon = 1;
             <string>pistol = keyboard_check_direct(ord('1'));
 shotgun = keyboard_check_direct(ord('2'));
 laser = keyboard_check_direct(ord('3'));
+assault = keyboard_check_direct(ord('4'));
 
 ///Weapon switching control keys
 
@@ -63,6 +64,9 @@ else if (shotgun){      //shotgun
 }
 else if(laser){      //laser
     global.weapon = 3;
+}
+else if(assault){
+    global.weapon = 4;
 }
 </string>
           </argument>
