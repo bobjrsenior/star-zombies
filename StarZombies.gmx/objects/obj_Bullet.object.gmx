@@ -63,8 +63,6 @@ death_delay2 = 2;
             <kind>1</kind>
             <string>count ++;
 
-
-
 ///collision~
 if (place_meeting(x+hsp,y,obj_PlayerCollidable))
 {
