@@ -100,8 +100,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_gameStartScreen</room>
-    <room>rooms\rm_Area_2</room>
     <room>rooms\rm_fullLevelTest</room>
+    <room>rooms\rm_Area_2</room>
     <room>rooms\rm2_pauseMenu</room>
     <room>rooms\rm_levelTest</room>
     <room>rooms\room10</room>

@@ -70,7 +70,7 @@ delay_counter = 0;
     
     
     if(delay_counter &gt;= fire_delay &amp;&amp; mouse_check_button(mb_left)){
-        instance_create(x + x_gun_change, y + y_gun_change, obj_Bullet);
+        instance_create(x + x_gun_change, y + y_gun_change, obj_Assault_Bullet);
         delay_counter = 0;
     }
     else if(delay_counter &lt; fire_delay){

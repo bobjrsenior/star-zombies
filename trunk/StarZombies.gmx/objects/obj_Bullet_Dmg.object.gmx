@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>pistol = 7;
-shotgun = (3/6);
-laser = (2/6);
-assault = (2/6)
+            <string>pistol = 15;
+shotgun = (.5);
+laser = (1.5);
+assault = (1.5)
 </string>
           </argument>
         </arguments>
