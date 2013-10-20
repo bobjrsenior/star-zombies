@@ -48,6 +48,7 @@
       <sprite>sprites\spr_Japan_Floor</sprite>
     </sprites>
     <sprite>sprites\spr_Japan_Wall</sprite>
+    <sprite>sprites\spr_end</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_startScreen</background>
@@ -113,6 +114,7 @@
       <object>objects\obj_Japan_Floor</object>
     </objects>
     <object>objects\obj_end_game</object>
+    <object>objects\onj_next_level</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_gameStartScreen</room>

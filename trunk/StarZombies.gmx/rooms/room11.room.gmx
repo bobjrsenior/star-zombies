@@ -4782,7 +4782,7 @@
     <instance objName="obj_Wall" x="992" y="1248" name="inst_67A71B33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Wall" x="1024" y="1280" name="inst_8FD6E484" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Wall" x="1024" y="1312" name="inst_F16256B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_next_level" x="1824" y="1856" name="inst_05EA3AF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="1824" y="1856" name="inst_05EA3AF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Laser" x="192" y="-192" name="inst_CC4A2C8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Shotgun" x="288" y="-160" name="inst_1DE72E44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japanman" x="960" y="96" name="inst_549D59BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
