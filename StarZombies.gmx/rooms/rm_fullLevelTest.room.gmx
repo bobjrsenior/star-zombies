@@ -715,6 +715,7 @@
     <instance objName="obj_Wall" x="896" y="448" name="inst_4337EFAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Weapon_Parent" x="-64" y="-96" name="inst_71992C0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menuController" x="-64" y="-64" name="inst_71A7A51B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="onj_next_level" x="32" y="992" name="inst_BC028533" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Shotgun" x="-192" y="-64" name="inst_94C52C19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japanman" x="736" y="992" name="inst_EAFE91BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Japanman" x="896" y="864" name="inst_77D9B84F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -728,6 +729,7 @@
     <instance objName="obj_Japanman" x="1568" y="672" name="inst_844B55D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Laser" x="-160" y="-32" name="inst_4BF60CB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Gun" x="0" y="-160" name="inst_98F3D024" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FireGun" x="-64" y="-32" name="inst_46C2C79E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy2" x="1792" y="736" name="inst_D6490C31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy2" x="1824" y="864" name="inst_5A164043" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy2" x="1024" y="544" name="inst_C30B0E51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -763,8 +765,6 @@
     <instance objName="obj_Cursor" x="-160" y="-96" name="inst_9B593F93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Player" x="832" y="544" name="inst_BDDC4AC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Assault" x="-96" y="-160" name="inst_FDD31967" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="onj_next_level" x="32" y="992" name="inst_BC028533" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_FireGun" x="-64" y="-32" name="inst_46C2C79E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
