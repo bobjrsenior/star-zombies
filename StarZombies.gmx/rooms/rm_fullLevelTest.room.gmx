@@ -762,7 +762,6 @@
     <instance objName="obj_Wall" x="896" y="448" name="inst_4337EFAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Weapon_Parent" x="-64" y="-96" name="inst_71992C0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menuController" x="-64" y="-64" name="inst_71A7A51B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_kill_box" x="0" y="0" name="inst_4634CEFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Gun" x="0" y="-160" name="inst_98F3D024" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
