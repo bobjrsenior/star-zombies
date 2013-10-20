@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_Weapon_Parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,14 +25,36 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dist = 18;
+            <string>///run parent event first
+event_inherited();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>dist = 8;
 x_change = 0;
 y_change = 0;
 angle = 0;
 
 
-fire_delay = 15;
-delay_counter = 15;
+fire_delay = 0;
+delay_counter = 0;
 
 fire = false;
 firing_count = 0;
@@ -58,14 +80,14 @@ firing_count = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_Weapon_Parent.weapon == 2){
+            <string>if(global.weapon == 2){
     visible = true;
     angle = obj_Player.image_angle;
     
     x_change = dist*cos(-2 * pi * (angle / 360));
     y_change = dist*sin(-2 * pi * (angle / 360));
-    x_gun_change = (dist + 11)*cos(-2 * pi * (angle / 360));
-    y_gun_change = (dist + 7)*sin(-2 * pi * (angle / 360));
+    x_gun_change = (dist + 16)*cos(-2 * pi * (angle / 360));
+    y_gun_change = (dist + 16)*sin(-2 * pi * (angle / 360));
     
     x = obj_Player.x + x_change;
     y = obj_Player.y + y_change;
@@ -100,7 +122,7 @@ firing_count = 0;
         min_angle = angle - 15;
         var bullet;
         while(counter &lt; 10){
-            bullet = instance_create(x + x_gun_change, y + y_gun_change, obj_Shotgun_Bullet);
+            bullet = instance_create(x + x_gun_change, y + y_gun_change, obj_Bullet);
             angle_bullet = random_range(min_angle,max_angle);
             bullet.hsp = obj_Shotgun_Bullet.velocity * cos(-2 * pi * (angle_bullet / 360));
             bullet.vsp = obj_Shotgun_Bullet.velocity * sin(-2 * pi * (angle_bullet / 360));

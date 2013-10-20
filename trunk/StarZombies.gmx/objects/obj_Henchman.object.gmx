@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_Enemy_Parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,16 +25,31 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///run parent event first
+event_inherited();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>health1 = 200;
 direction = 0;
 
-
-//Sprite animation variables
-frame_count = 0;
-frame_dir = 1;
-frame_index = 0;
-move_dir = 0;
-image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -57,171 +72,66 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//image_angle = direction;
+            <string>///run parent event first
+event_inherited();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///path finding
+
+image_angle = direction;
 
 Grid = mp_grid_create(0,0,room_width/32,room_height/32,32,32);
 Path = path_add();
-mp_grid_add_instances(Grid,obj_Wall,0);
+mp_grid_add_instances(Grid,obj_PlayerCollidable,0);
+///mp_grid_add_instances(Grid,obj_Enemy_Parent,0);
 mp_grid_path(Grid,Path,x,y,obj_Player.x,obj_Player.y,1);
 path_start(Path,3,2,1);
 </string>
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Sprites Animation
-///Changes the sprite based on direction
-
-//Determines if the henchmen is moving or not
-move_check = (hspeed != 0 || vspeed != 0);
-
-frame_count += 1;
-if(frame_count &gt;= 15){
-    frame_index += frame_dir;
-    if(frame_index &gt;= 3){
-        frame_dir *= -1;
-        frame_index += frame_dir;
-    }
-    else if(frame_index &lt;= -1){
-        frame_dir *= -1;
-        frame_index += frame_dir;
-    }
-    frame_count = 0;
-}
-
-if(vspeed &lt; 0){
-    if(hspeed == 0){
-        image_index = 1 + (frame_index);
-    }
-    move_dir = 0;
-}
-else if(vspeed &gt; 0){
-    if(hspeed == 0){
-        image_index = 5 + (frame_index);
-    }
-    move_dir = 1;
-}
-
-if(hspeed &lt; 0){
-    image_index = 9 + (frame_index);
-    move_dir = 2;
-}
-else if(hspeed &gt; 0){
-    image_index = 13 + (frame_index);
-    move_dir = 3;
-}
-
-/*if(move_dir == 0 &amp;&amp; !move_check){
-    image_index = 0;
-}
-else if(move_dir == 1 &amp;&amp; !move_check){
-    image_index = 4;
-}
-else if(move_dir == 2 &amp;&amp; !move_check){
-    image_index = 8;
-}
-else if(move_dir == 3 &amp;&amp; !move_check){
-    image_index = 12;
-}*/
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_Laser_Bullet">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>health1 -= obj_Weapon_Parent.laser;
-
-if (health1 == 0)
-    instance_destroy();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_Shotgun_Bullet">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>health1 -= obj_Weapon_Parent.shotgun;
-
-if (health1 == 0)
-    instance_destroy();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_Bullet">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>health1 -= obj_Weapon_Parent.pistol;
-
-if (health1 == 0)
-    instance_destroy();
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///run parent event first
+event_inherited();
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>500</id>
@@ -253,9 +163,6 @@ if (health1 == 0)
           <argument>
             <kind>1</kind>
             <string>///draw gui
-//Set font preferences
-draw_set_color(c_black);
-draw_set_font(fnt_main);
 draw_text(10,10,hspeed);
 draw_text(10,30,vspeed);
 draw_healthbar(x-15,y-15,x+15,y-20,health1,c_black,c_red,c_green,0,true,true);

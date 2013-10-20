@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>velocity = 15;
+            <string>///variables
+velocity = 15;
 
 angle = obj_Player.image_angle;
 
@@ -39,6 +40,9 @@ death_delay = 34;
 switch_dir = false;
 
 death_delay2 = 2;
+
+shotgun = (1/3);
+
 </string>
           </argument>
         </arguments>
@@ -61,23 +65,19 @@ death_delay2 = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>count ++;
-
-
-
-///collision~
-if (place_meeting(x+hsp,y,obj_Wall))
+            <string>///collision~
+if (place_meeting(x+hsp,y,obj_PlayerCollidable))
 {
-    while(!place_meeting(x,y,obj_Wall)){
+    while(!place_meeting(x,y,obj_PlayerCollidable)){
         x += sign(hsp);
     }
     hsp *= -.25;
     count += 5;
     switch_dir = true;
 }
-if (place_meeting(x,y+vsp,obj_Wall))
+if (place_meeting(x,y+vsp,obj_PlayerCollidable))
 {
-    while(!place_meeting(x,y,obj_Wall)){
+    while(!place_meeting(x,y,obj_PlayerCollidable)){
         y += sign(vsp);
     }
     vsp *= -.25;
@@ -96,6 +96,28 @@ if(!switch_dir){
 else{
     switch_dir = false;
 }
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>count ++;
 
 </string>
           </argument>

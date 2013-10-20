@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-1</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_Weapon_Parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,7 +25,29 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dist = 18;
+            <string>///run parent event first
+event_inherited();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>dist = 8;
 x_change = 0;
 y_change = 0;
 angle = 0;
@@ -55,14 +77,14 @@ delay_counter = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_Weapon_Parent.weapon == 3){
+            <string>if(global.weapon == 3){
     visible = true;
     angle = obj_Player.image_angle;
     
     x_change = dist*cos(-2 * pi * (angle / 360));
     y_change = dist*sin(-2 * pi * (angle / 360));
-    x_gun_change = (dist + 12)*cos(-2 * pi * (angle / 360));
-    y_gun_change = (dist + 8)*sin(-2 * pi * (angle / 360));
+    x_gun_change = (dist + 16)*cos(-2 * pi * (angle / 360));
+    y_gun_change = (dist + 16)*sin(-2 * pi * (angle / 360));
     
     x = obj_Player.x + x_change;
     y = obj_Player.y + y_change;

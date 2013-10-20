@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>weapon = 1;
+            <string>///weapon damage
+global.weapon = 1;
 </string>
           </argument>
         </arguments>
@@ -48,19 +49,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//If 1 or 2 is pressed
-pistol = keyboard_check_direct(ord('1'));
-shotgun = keyboard_check_direct(ord('2'));
-laser = keyboard_check_direct(ord('3'));
+            <string>///Weapon switching control keys
 
-if(pistol){
-    weapon = 1;
+if(keyboard_check_direct(ord('1'))){       //pistol
+    global.weapon = 1;
 }
-else if (shotgun){
-    weapon = 2;
+else if (keyboard_check_direct(ord('2'))){      //shotgun
+    global.weapon = 2;
 }
-else if(laser){
-    weapon = 3;
+else if(keyboard_check_direct(ord('3'))){      //laser
+    global.weapon = 3;
 }
 </string>
           </argument>
