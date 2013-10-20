@@ -135,7 +135,7 @@
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>rm_Area_2</room>
+            <room>rm_fullLevelTest</room>
           </argument>
         </arguments>
       </action>
