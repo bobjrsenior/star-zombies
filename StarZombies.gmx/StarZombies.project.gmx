@@ -83,6 +83,7 @@
     <object>objects\obj_turret</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_fullLevelTest</room>
     <room>rooms\rm_gameStartScreen</room>
     <room>rooms\rm_levelTest</room>
     <room>rooms\rm2_pauseMenu</room>
