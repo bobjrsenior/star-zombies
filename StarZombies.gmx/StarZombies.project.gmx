@@ -62,6 +62,7 @@
     </objects>
     <objects name="Enemies">
       <object>objects\obj_Enemy1</object>
+      <object>objects\obj_Enemy_Parent</object>
     </objects>
     <object>objects\obj_enemy2</object>
     <object>objects\obj_enemy3</object>

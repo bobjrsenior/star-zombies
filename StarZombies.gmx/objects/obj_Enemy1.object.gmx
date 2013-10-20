@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Players Directional Speed
+            <string>health1 = 50;
+
+//Players Directional Speed
 hsp = 0;
 vsp = 0;
 //Total Spped allowed (Hypotenuse)
@@ -39,7 +41,8 @@ dist_sqr = 0;
 //angle to player
 theta = 0;
 
-health1 = 50;
+charge = false;
+charge_count = 0;
 
 
 angle = 0;
@@ -74,7 +77,7 @@ maxHitpoints = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ax_change = x - obj_Player.x;
+            <string>x_change = x - obj_Player.x;
 y_change = y - obj_Player.y;
 x_dir = sign(x_change);
 y_dir = sign(y_change);
@@ -84,7 +87,6 @@ dist = sqrt(dist);
 if(dist &lt;= 129){
     theta = point_direction(x, y, obj_Player.x, obj_Player.y);
     theta = degtorad(theta)
-    theta *= 1;
     hsp = velocity*cos(theta);
     vsp = -velocity*sin(theta);
     line = collision_line(x, y, obj_Player.x + 17*x_dir, obj_Player.y + 17*y_dir, obj_Wall, false, true);
@@ -100,6 +102,124 @@ if(dist &lt;= 129){
     }
 
 }
+else if(charge){
+    x_change = x - obj_Player.x;
+    y_change = y - obj_Player.y;
+    x_dir = sign(x_change);
+    y_dir = sign(y_change);
+    dist_sqr = x_change * x_change + y_change * y_change;
+    dist = sqrt(dist);
+    
+    if(dist &lt;= 129){
+        theta = point_direction(x, y, obj_Player.x, obj_Player.y);
+        theta = degtorad(theta)
+        hsp = velocity*cos(theta);
+        vsp = -velocity*sin(theta);
+        line = collision_line(x, y, obj_Player.x + 17*x_dir, obj_Player.y + 17*y_dir, obj_Wall, false, true);
+        if(line == noone){
+            hsp = velocity*cos(theta);
+            vsp = -velocity*sin(theta);
+            x += hsp;
+            y += vsp;
+        }
+        else{
+            //hsp = 0;
+            //vsp = 0;
+        }
+    
+    }
+    
+}
+if(charge){
+    charge_count ++;
+}
+if(charge_count &gt; 60){
+    charge_count = 0;
+    charge = false;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Laser_Bullet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>health1 -= obj_Bullet_Dmg.laser;
+
+if (health1 == 0)
+    instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Shotgun_Bullet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>health1 -= obj_Bullet_Dmg.shotgun;
+
+if (health1 == 0)
+    instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Bullet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(dist &gt; 129){
+    charge = true;
+    charge_count = 0;
+}
+
+health1 -= obj_Bullet_Dmg.pistol;
+
+if (health1 == 0)
+    instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -141,8 +261,6 @@ if(dist &lt;= 129){
 draw_set_color(c_black);
 draw_set_font(fnt_main);
 
-//Draws Health in the topleft corner of screen
-draw_text(10,10,"Health: " + string(obj_Player.hitpoints));  
 
 draw_healthbar(x-15,y-15,x+15,y-20,obj_Player.hitpoints,c_black,c_red,c_green,0,true,true);
 </string>
